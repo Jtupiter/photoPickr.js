@@ -10,12 +10,6 @@ module.exports = function(grunt) {
           "js/templates.js": [
             "templates/*.html"
           ]
-        },
-        options: {
-          "namespace": "PhotoPickrTemplates",
-          processContent: function(src) {
-            return src.replace(', __e = _.escape', '');
-          }
         }
       }
     },
